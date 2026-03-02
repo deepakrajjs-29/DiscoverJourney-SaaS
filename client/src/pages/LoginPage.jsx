@@ -1,6 +1,7 @@
 const LoginPage = () => {
   const handleGoogleLogin = () => {
-    window.location.href = '/api/auth/google';
+    const apiUrl = import.meta.env.VITE_API_URL || '/api';
+    window.location.href = `${apiUrl}/auth/google`;
   };
 
   return (

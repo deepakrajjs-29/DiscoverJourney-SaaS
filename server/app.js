@@ -31,7 +31,12 @@ if (!fs.existsSync(uploadsDir)) {
 // Middleware
 app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',
+    'https://discover-journey.vercel.app',
+    'https://discover-journey-saa-qexj9u876-deepakrajjs-29s-projects.vercel.app',
+    process.env.CLIENT_URL
+  ].filter(Boolean),
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));
