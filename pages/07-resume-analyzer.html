@@ -1,0 +1,237 @@
+<html class="dark"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#342bee",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111022",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style type="text/tailwindcss">
+    body {
+      background-color: #111022;
+      font-family: 'Inter', sans-serif;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .logo-gradient {
+      background: linear-gradient(135deg, #fff 0%, #d1d1d1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen">
+<div class="flex h-screen overflow-hidden">
+<aside class="w-64 border-r border-primary/20 bg-background-light dark:bg-background-dark flex flex-col">
+<div class="p-6 flex items-center gap-3">
+<div class="size-9 flex items-center justify-center shrink-0">
+<img alt="DJ Logo" class="h-full w-auto object-contain brightness-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1XAYQZHhLTBTIDE9cDgdpIWecn77QHhgHU1UeuIthlb6wmVLHsa9oNEP5pnZlgDxojIfZ2MSpkkIVXB5Zmu5TZDrX53Ydw8-SGzdCPaQ3G71hTknts-tWDjgm64_HDE9KygFdnRMn_Z82DmLPZhr3n3DGgoCnp_pSOTE_2Z4F_C6WzMeUXerdk4PJ8WprSidtCGQFy25TATrcgQyuB23aJa05iaWNWlWgCJvTnIhRxEHk7w1NxBjIkG4UjK9e1npY1-eZqVTgeyc"/>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">DiscoverJourney</h2>
+</div>
+<nav class="flex-1 px-4 space-y-2 mt-4">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-primary/10 text-slate-600 dark:text-slate-400 transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary text-white shadow-lg shadow-primary/20" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="font-medium">Resume Analyzer</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-primary/10 text-slate-600 dark:text-slate-400 transition-colors" href="#">
+<span class="material-symbols-outlined">hub</span>
+<span class="font-medium">LinkedIn Optimizer</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-primary/10 text-slate-600 dark:text-slate-400 transition-colors" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-medium">Networking AI</span>
+</a>
+</nav>
+<div class="p-4 border-t border-primary/10">
+<div class="bg-primary/10 rounded-xl p-4 mb-4">
+<p class="text-xs font-bold text-primary uppercase tracking-wider mb-1">Current Plan</p>
+<p class="text-sm font-semibold mb-3">Free Tier</p>
+<button class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90 transition-all">
+            Upgrade to Pro
+          </button>
+</div>
+<div class="flex items-center gap-3 px-2">
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-800 flex-shrink-0">
+<img alt="User Avatar" class="rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGs6njxIQ3kc7QeTDx3UwOloKVYNZ--oS3fgpd7XTpHqQkD7j9SVPhrxeFTxG63JHPRMgHuNBMf0yA58x9YOyhOOlxk45TffN9uaFu4G9tfaSp3ILqe6WKcL-7qH26OOnNq1xQrJ2cd9koWUh0ywXYOJXF1cE9BUFOg4p2isX-0E3vxFeBZd6rfViIkGr1Gcea9gDCnqoO-Wafhhm6YO-eG5HPkZiWhx51hO4pPD8vKYif1ra1D-2ZV_Z_JKOmaSvKAH0QQ4um54"/>
+</div>
+<div class="overflow-hidden">
+<p class="text-sm font-bold truncate">Alex Chen</p>
+<p class="text-xs text-slate-500 truncate">Computer Science '25</p>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 overflow-y-auto bg-background-light dark:bg-[#0d0c1a]">
+<header class="h-16 border-b border-primary/10 flex items-center justify-between px-8 bg-background-light/50 dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-10">
+<div class="flex items-center gap-2 text-slate-500">
+<span class="text-sm">Tools</span>
+<span class="material-symbols-outlined text-sm leading-none">chevron_right</span>
+<span class="text-sm font-semibold text-slate-900 dark:text-white">Resume Analyzer</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-slate-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<div class="max-w-5xl mx-auto px-8 py-10">
+<div class="mb-10">
+<h1 class="text-4xl font-black tracking-tight mb-3 bg-gradient-to-r from-white to-primary/50 bg-clip-text text-transparent">AI Resume Intelligence</h1>
+<p class="text-slate-500 text-lg max-w-2xl leading-relaxed">Optimize your resume for LinkedIn algorithms and high-growth recruiters using advanced neural analysis.</p>
+</div>
+<div class="mb-12">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative glass-card rounded-2xl p-12 border-2 border-dashed border-primary/30 flex flex-col items-center justify-center text-center transition-all hover:border-primary">
+<div class="size-20 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-4xl">cloud_upload</span>
+</div>
+<h3 class="text-2xl font-bold mb-2">Upload your resume</h3>
+<p class="text-slate-400 mb-8 max-w-sm">Drag and drop your PDF or DOCX file here. AI will process your profile in seconds.</p>
+<div class="flex gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-xl flex items-center gap-2 transition-all shadow-xl shadow-primary/20">
+<span class="material-symbols-outlined">file_upload</span>
+                  Browse Files
+                </button>
+<button class="bg-white/5 hover:bg-white/10 text-white font-bold py-3 px-8 rounded-xl transition-all border border-white/10">
+                  Import from LinkedIn
+                </button>
+</div>
+<div class="mt-8 flex items-center gap-6 text-xs text-slate-500">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-green-500">lock</span>
+                  AES-256 Encrypted
+                </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-green-500">verified_user</span>
+                  GDPR Compliant
+                </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-green-500">security</span>
+                  Data Privacy Guaranteed
+                </div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div class="glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+<h4 class="text-slate-400 text-sm font-bold uppercase tracking-widest mb-4">Authority Score</h4>
+<div class="relative size-40 flex items-center justify-center mb-4">
+<svg class="size-full transform -rotate-90">
+<circle class="text-slate-800" cx="80" cy="80" fill="transparent" r="70" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary" cx="80" cy="80" fill="transparent" r="70" stroke="currentColor" stroke-dasharray="440" stroke-dashoffset="110" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-4xl font-black">75</span>
+<span class="text-xs text-slate-500">/ 100</span>
+</div>
+</div>
+<p class="text-sm font-medium text-primary">Potential: Exceptional</p>
+<p class="text-xs text-slate-500 mt-2 px-4 italic leading-tight">Your score is higher than 82% of students in your major.</p>
+</div>
+<div class="lg:col-span-2 glass-card rounded-2xl p-6">
+<div class="flex items-center justify-between mb-6">
+<h4 class="text-lg font-bold">Keyword Gap Analysis</h4>
+<span class="text-xs font-bold px-2 py-1 bg-primary/20 text-primary rounded">Target: SWE Intern</span>
+</div>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span class="font-bold">Missing Core Competencies</span>
+<span class="text-rose-500 font-bold">-12% Impact</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-rose-500/10 text-rose-500 text-xs rounded-full border border-rose-500/20">Cloud Computing</span>
+<span class="px-3 py-1 bg-rose-500/10 text-rose-500 text-xs rounded-full border border-rose-500/20">CI/CD Pipelines</span>
+<span class="px-3 py-1 bg-rose-500/10 text-rose-500 text-xs rounded-full border border-rose-500/20">Docker</span>
+<span class="px-3 py-1 bg-rose-500/10 text-rose-500 text-xs rounded-full border border-rose-500/20">Unit Testing</span>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-1 mt-4">
+<span class="font-bold">Strong Matches</span>
+<span class="text-green-500 font-bold">+24% Impact</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-green-500/10 text-green-500 text-xs rounded-full border border-green-500/20">Python</span>
+<span class="px-3 py-1 bg-green-500/10 text-green-500 text-xs rounded-full border border-green-500/20">React.js</span>
+<span class="px-3 py-1 bg-green-500/10 text-green-500 text-xs rounded-full border border-green-500/20">SQL</span>
+<span class="px-3 py-1 bg-green-500/10 text-green-500 text-xs rounded-full border border-green-500/20">Team Leadership</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-3 glass-card rounded-2xl overflow-hidden">
+<div class="bg-primary/5 px-6 py-4 border-b border-white/5 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<h4 class="font-bold">AI Content Optimization</h4>
+</div>
+<div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<p class="text-xs font-bold text-slate-500 uppercase mb-4">Headline Suggestion</p>
+<div class="p-4 bg-background-dark/50 rounded-xl border border-white/5 relative group">
+<p class="text-sm italic text-slate-400 mb-2">Original: CS Student at Tech University seeking internships</p>
+<p class="text-sm font-semibold text-white leading-relaxed">AI Optimized: Aspiring Software Engineer | React.js &amp; Python Specialist | 2024 Dean's List @ Tech University | Building Scalable AI Solutions</p>
+<button class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-sm">content_copy</span>
+</button>
+</div>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-500 uppercase mb-4">"About" Section Rewrite</p>
+<div class="p-4 bg-background-dark/50 rounded-xl border border-white/5 relative group">
+<p class="text-sm text-white leading-relaxed line-clamp-3">Driven Computer Science student with a passion for web development and machine learning. Experienced in full-stack projects and passionate about solving complex user problems through code...</p>
+<button class="mt-3 text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                    View Full Rewrite
+                    <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-10 flex items-center justify-between p-6 glass-card rounded-2xl bg-primary/5">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<div>
+<p class="font-bold text-white">Unlock Professional Mode</p>
+<p class="text-xs text-slate-400">Get 15+ more personalized LinkedIn hooks based on your resume.</p>
+</div>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-6 rounded-lg transition-all">
+            Unlock Full Analysis
+          </button>
+</div>
+</div>
+</main>
+</div>
+</body></html>

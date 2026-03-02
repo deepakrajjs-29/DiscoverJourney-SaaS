@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Authority Content Engine - DiscoverJourney</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#342bee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111022",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .logo-dj-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #111022;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .logo-dj-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.4);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen font-display">
+<header class="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="logo-dj-container border border-slate-700">
+<img alt="DiscoverJourney Logo" class="logo-dj-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB98Lq6DOzG2b4jG659OSfsv6KDU5RH_0egGaibcWUdtPXdnecYHxhvyQiI5mmvO7iTIFVYjksTMWKQjVs14UucnlTj29fHJV06_yvMo8PcxXkjPxiP-7ZQFJ2yRHmt1gE6SSjh0AIHZzFC6rLGb5JGyauApIOg4fdTwF6ZwkxKJWS_gMjgryodDoG9OowyXg3UU6bku37eoXnHjwQ_zvYRqBPeM8bXJe11npD8rB_EyWo1RKFL29MvzvUKw03DmSJTTJKrOg1F7l0"/>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">DiscoverJourney</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-sm font-semibold text-primary" href="#">Content Engine</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Analytics</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-sm font-bold h-10 px-6 rounded-lg transition-all shadow-lg shadow-primary/20">
+                Upgrade Plan
+            </button>
+<div class="h-10 w-10 rounded-full border-2 border-primary/20 bg-slate-200 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb8N57VUUlLGlJsExNPzS2jlpzkdFNqcEWDVzSjGm-XUfXQkFG6FH1vEZEomj627Je6u5RCNYu3FE58w61SYy5Ub_pt3O842t2UvEa3Dh8_wa60WT6UDCqGyCOeTBtxiLLrXQOX_xon_ljDceTxfPFn2HkqsC4bQv7txkQQ-Sqv5hvMB7NgFWznSVPwZbtIYMY7zPKWU4805RTAqjQnf-Gbab4IAwi5oRqDnKR_2tk8q9nz-M3lon5b2vtOgDPDdxPPTJUmTpmt3k"/>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-8">
+<div class="mb-10">
+<h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white tracking-tight mb-2">Authority Content Engine</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg">AI-powered LinkedIn post generation for student leaders.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-5 space-y-6">
+<div class="bg-white dark:bg-slate-900/50 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">tune</span>
+                    Post Parameters
+                </h3>
+<div class="space-y-5">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Topic or Core Message</label>
+<textarea class="form-textarea w-full rounded-lg bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 focus:border-primary focus:ring-1 focus:ring-primary h-32 resize-none text-sm leading-relaxed" placeholder="e.g. My experience landing a summer internship at a Tier 1 tech company and what I learned from 50 rejections."></textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Tone of Voice</label>
+<select class="form-select w-full rounded-lg bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:border-primary focus:ring-1 focus:ring-primary h-12">
+<option>Professional &amp; Insightful</option>
+<option>Authentic &amp; Vulnerable</option>
+<option>Direct &amp; Tactical</option>
+<option>Bold &amp; Challenging</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Target Audience</label>
+<select class="form-select w-full rounded-lg bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:border-primary focus:ring-1 focus:ring-primary h-12">
+<option>Fellow Students</option>
+<option>Hiring Managers</option>
+<option>Industry Leaders</option>
+<option>Startup Founders</option>
+</select>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 transition-all mt-4">
+<span class="material-symbols-outlined">auto_awesome</span>
+                        Generate High-Authority Post
+                    </button>
+</div>
+</div>
+<div class="bg-primary/5 border border-primary/20 p-5 rounded-xl">
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">lightbulb</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white mb-1">Pro Tip: Use the 'Hook' Strategy</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Posts with a strong opening line see 4.5x more engagement on LinkedIn. Our engine prioritizes scroll-stopping hooks based on current algorithm trends.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="bg-white dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col h-full">
+<div class="p-6 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500">verified</span>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Generated Content</h3>
+</div>
+<div class="flex gap-2">
+<button class="p-2 text-slate-500 hover:text-primary transition-colors" title="Regenerate">
+<span class="material-symbols-outlined">refresh</span>
+</button>
+<button class="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 px-4 py-2 rounded-lg text-sm font-bold transition-all">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+                            Copy Text
+                        </button>
+</div>
+</div>
+<div class="p-8 space-y-6 overflow-y-auto">
+<div class="space-y-4">
+<p class="text-lg font-extrabold text-slate-900 dark:text-white leading-snug">
+                            I applied to 52 internships and got 51 rejections. 📉
+                        </p>
+<p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Most people would stop after the 10th "Thank you for your interest." I didn't. 
+                        </p>
+<p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            That 52nd application led to my dream role at TechCorp. Looking back, those 51 "no's" weren't failures—they were data points. Here is the 3-step framework I used to fix my strategy:
+                        </p>
+<ul class="space-y-3 pl-4 border-l-2 border-primary/30">
+<li class="text-slate-700 dark:text-slate-300"><span class="font-bold">1. Stop applying, start connecting.</span> I reached out to 3 people in the department before hitting "Submit".</li>
+<li class="text-slate-700 dark:text-slate-300"><span class="font-bold">2. Show, don't tell.</span> I built a public GitHub repo for the specific problem they were solving.</li>
+<li class="text-slate-700 dark:text-slate-300"><span class="font-bold">3. The 24-hour rule.</span> I followed up with a personal note exactly 24 hours after the interview.</li>
+</ul>
+<p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                            Persistence is a skill, not a personality trait. If you're currently in the "no" phase—keep going. Your "yes" is waiting at number 52. 🚀
+                        </p>
+<div class="pt-4 flex flex-wrap gap-2">
+<span class="text-primary font-bold text-sm">#InternshipSearch</span>
+<span class="text-primary font-bold text-sm">#StudentLife</span>
+<span class="text-primary font-bold text-sm">#TechCareers</span>
+<span class="text-primary font-bold text-sm">#GrowthMindset</span>
+</div>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-700">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-slate-500">image_search</span>
+<h4 class="text-xs font-bold uppercase tracking-wider text-slate-500">Visual Recommendation</h4>
+</div>
+<p class="text-sm italic text-slate-600 dark:text-slate-400">
+                            "A high-quality photo of you smiling in a casual workspace with a laptop, or a screenshot of your 51 rejection emails blurred out with the 52nd 'Offer' email highlighted in green."
+                        </p>
+</div>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-900/80 border-t border-slate-200 dark:border-slate-800 rounded-b-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-slate-400 uppercase">Estimated Impact</span>
+<div class="flex items-center gap-1">
+<div class="h-2 w-12 bg-primary rounded-full"></div>
+<div class="h-2 w-12 bg-primary rounded-full"></div>
+<div class="h-2 w-12 bg-primary rounded-full"></div>
+<div class="h-2 w-12 bg-primary/20 rounded-full"></div>
+<span class="text-xs font-bold text-primary ml-2">High Engagement</span>
+</div>
+</div>
+</div>
+<button class="text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+</body></html>

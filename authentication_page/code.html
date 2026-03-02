@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign In - DiscoverJourney</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#342bee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#0a0a0c",
+                        "card-dark": "#11111d"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+        }.dj-logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-display">
+<header class="w-full px-6 py-4 flex items-center justify-between border-b border-slate-200 dark:border-slate-800/50">
+<div class="flex items-center gap-3">
+<div class="size-8 text-white">
+<svg class="w-full h-full" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M52 30V48C52 60.1503 42.1503 70 30 70C17.8497 70 8 60.1503 8 48C8 35.8497 17.8497 26 30 26H38V38H30C24.4772 38 20 42.4772 20 48C20 53.5228 24.4772 58 30 58C35.5228 58 40 53.5228 40 48V30H52Z" fill="currentColor"></path>
+<path d="M60 18H72V58C72 70.1503 62.1503 80 50 80C46.6863 80 43.3137 79.3137 40 78V66C43.3137 67.3137 46.6863 68 50 68C55.5228 68 60 63.5228 60 58V18Z" fill="currentColor" fill-opacity="0.9"></path>
+<path d="M60 38H72V48H60V38Z" fill="currentColor" fill-opacity="0.7"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight">DiscoverJourney</h2>
+</div>
+<div class="hidden md:flex gap-8">
+<a class="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="#">Features</a>
+<a class="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="#">About</a>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center p-6">
+<div class="w-full max-w-md bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-800/60 rounded-[2rem] shadow-2xl overflow-hidden">
+<div class="h-48 bg-gradient-to-b from-[#1a1a2e] to-card-dark relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-from)_0%,_transparent_70%)] from-primary"></div>
+<div class="relative z-10 size-24 text-white">
+<svg class="w-full h-full drop-shadow-2xl" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M52 30V48C52 60.1503 42.1503 70 30 70C17.8497 70 8 60.1503 8 48C8 35.8497 17.8497 26 30 26H38V38H30C24.4772 38 20 42.4772 20 48C20 53.5228 24.4772 58 30 58C35.5228 58 40 53.5228 40 48V30H52Z" fill="currentColor"></path>
+<path d="M60 18H72V58C72 70.1503 62.1503 80 50 80C46.6863 80 43.3137 79.3137 40 78V66C43.3137 67.3137 46.6863 68 50 68C55.5228 68 60 63.5228 60 58V18Z" fill="currentColor" fill-opacity="0.9"></path>
+<path d="M60 38H72V48H60V38Z" fill="currentColor" fill-opacity="0.7"></path>
+</svg>
+</div>
+</div>
+<div class="p-10 pt-4 space-y-8">
+<div class="text-center space-y-3">
+<h1 class="text-3xl font-black leading-tight tracking-tight text-white">Start Your DiscoverJourney</h1>
+<p class="text-slate-400 text-base px-4">Build your LinkedIn authority with AI-powered insights.</p>
+</div>
+<div class="space-y-6">
+<button class="w-full flex items-center justify-center gap-3 bg-white hover:bg-slate-100 text-slate-900 font-bold h-14 rounded-xl transition-all shadow-lg group">
+<div class="size-5">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+</div>
+<span>Continue with Google</span>
+</button>
+<div class="relative flex py-2 items-center">
+<div class="flex-grow border-t border-slate-800"></div>
+<span class="flex-shrink mx-4 text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em]">Secure Entry</span>
+<div class="flex-grow border-t border-slate-800"></div>
+</div>
+<div class="text-center">
+<p class="text-[13px] text-slate-500 leading-relaxed px-6">
+                            By continuing, you agree to our <a class="text-white hover:underline underline-offset-4" href="#">Terms of Service</a> and <a class="text-white hover:underline underline-offset-4" href="#">Privacy Policy</a>.
+                        </p>
+</div>
+</div>
+<div class="flex items-center justify-center gap-5 text-[11px] font-semibold text-slate-500 pt-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Encrypted</span>
+</div>
+<div class="size-1 rounded-full bg-slate-800"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Fast Access</span>
+</div>
+<div class="size-1 rounded-full bg-slate-800"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span>Verified</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full p-8 flex flex-col items-center justify-center text-center">
+<blockquote class="max-w-md italic text-slate-400">
+<p class="text-lg font-medium">"Your journey is yours. We only help you structure it."</p>
+</blockquote>
+<div class="mt-8 text-xs font-medium text-slate-600 tracking-wide">
+            © 2024 DISCOVERJOURNEY INC. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+
+</body></html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profile Setup - DiscoverJourney</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#342bee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111022",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-accent {
+            box-shadow: 0 0 40px -10px rgba(52, 43, 238, 0.3);
+        }
+        :root {
+            --primary-color: #342bee;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4 bg-background-light dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center bg-white rounded-md p-1 size-9">
+<svg class="w-full h-full" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M48 30V45H57V30H48Z" fill="#111022"></path>
+<path d="M41 42C35 42 30 47 30 53C30 59 35 64 41 64C47 64 52 59 52 53V30H59V60C59 68 53 74 45 74C37 74 31 68 31 60" stroke="#111022" stroke-linecap="round" stroke-width="7"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">DiscoverJourney</h2>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Resources</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold transition-all hover:opacity-90 active:scale-95">
+                        Save Progress
+                    </button>
+<div class="aspect-square rounded-full size-10 bg-slate-200 dark:bg-slate-800 flex items-center justify-center border border-slate-300 dark:border-slate-700">
+<span class="material-symbols-outlined text-slate-500">person</span>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center py-12 px-6">
+<div class="max-w-[800px] w-full flex flex-col gap-8">
+<div class="text-center space-y-6">
+<div class="space-y-2">
+<span class="text-primary font-bold text-sm uppercase tracking-[0.2em]">Welcome to DiscoverJourney</span>
+<h2 class="text-primary tracking-tight text-3xl md:text-4xl font-extrabold italic leading-tight">
+                                'Define yourself before the world defines you.'
+                            </h2>
+</div>
+<div class="flex flex-col gap-2 max-w-xl mx-auto">
+<div class="flex justify-between items-center text-sm font-semibold mb-1">
+<span class="text-slate-600 dark:text-slate-400">Profile Completion</span>
+<span class="text-primary">25%</span>
+</div>
+<div class="h-2 w-full bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 25%;"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-widest">Step 1 of 4: Basic Information</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-8 glow-accent">
+<div class="flex flex-col gap-8">
+<div class="space-y-2">
+<h3 class="text-slate-900 dark:text-white text-2xl font-black leading-tight">Build Your Authority</h3>
+<p class="text-slate-600 dark:text-slate-400 text-base">Let AI help you stand out on LinkedIn by completing your professional profile details below.</p>
+</div>
+<form class="space-y-8">
+<div class="flex flex-col md:flex-row items-center gap-8 p-6 bg-slate-50 dark:bg-slate-800/40 rounded-xl border border-dashed border-slate-300 dark:border-slate-700">
+<div class="relative group">
+<div class="size-32 rounded-full border-4 border-primary/20 bg-slate-200 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-4xl text-slate-400">account_circle</span>
+</div>
+<button class="absolute bottom-0 right-0 bg-primary text-white p-2 rounded-full shadow-lg" type="button">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+<div class="flex-1 text-center md:text-left space-y-3">
+<div>
+<h4 class="text-slate-900 dark:text-white text-lg font-bold">Profile Photo</h4>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Recommended: 400x400px JPG or PNG. A clear professional headshot works best.</p>
+</div>
+<button class="inline-flex items-center gap-2 px-6 py-2.5 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white rounded-lg text-sm font-bold hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">upload</span>
+                                            Upload Image
+                                        </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 px-1">Full Name</label>
+<input class="w-full h-12 px-4 rounded-lg bg-white dark:bg-background-dark border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="e.g. Alex Rivera" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 px-1">University</label>
+<input class="w-full h-12 px-4 rounded-lg bg-white dark:bg-background-dark border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="e.g. Stanford University" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 px-1">Degree / Major</label>
+<input class="w-full h-12 px-4 rounded-lg bg-white dark:bg-background-dark border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="e.g. B.S. Computer Science" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 px-1">Domain Focus</label>
+<select class="w-full h-12 px-4 rounded-lg bg-white dark:bg-background-dark border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all appearance-none">
+<option disabled="" selected="" value="">Select your field</option>
+<option value="tech">Software Engineering</option>
+<option value="design">Product Design</option>
+<option value="marketing">Digital Marketing</option>
+<option value="finance">FinTech &amp; Finance</option>
+<option value="data">Data Science &amp; AI</option>
+</select>
+</div>
+</div>
+<div class="bg-primary/5 border border-primary/20 rounded-xl p-6 flex items-start gap-4">
+<div class="p-3 bg-primary/20 rounded-lg">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+<div class="space-y-1">
+<h4 class="text-slate-900 dark:text-white font-bold">AI Optimization Ready</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                            Once you complete this step, our AI will analyze your focus to draft a compelling LinkedIn headline that captures recruiter attention.
+                                        </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="flex-1 h-12 bg-primary text-white rounded-lg font-bold text-lg hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="submit">
+                                        Continue to Step 2
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="h-12 px-8 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-all" type="button">
+                                        Skip for Now
+                                    </button>
+</div>
+</form>
+</div>
+</div>
+<div class="flex justify-center gap-8 text-slate-500 dark:text-slate-500 text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Setup Guide</a>
+<a class="hover:text-primary transition-colors" href="#">Support</a>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

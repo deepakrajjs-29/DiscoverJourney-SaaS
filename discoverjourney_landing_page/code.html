@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DiscoverJourney - Build Your LinkedIn Authority</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#342bee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111827",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }.dj-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            position: relative;
+        }
+        .dj-logo svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="dj-logo text-primary">
+<svg fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M48 30V45C48 45 44 43 40 43C32 43 25 50 25 58C25 66 32 73 40 73C48 73 55 66 55 58V30H72V38H63V62C63 71 56 78 47 78C38 78 31 71 31 62" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
+<path d="M63 45V70C63 76 58 81 52 81" opacity="0.6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white uppercase tracking-wider">DiscoverJourney</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Features</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Pricing</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block px-5 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-primary transition-colors">Log In</button>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 transition-all">Get Started</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-30 pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-500/10 blur-[120px] rounded-full"></div>
+</div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+<span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-bold text-primary uppercase tracking-widest">New: AI Engine v2.0</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+                        Stop Posting. <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-indigo-400">Start Positioning.</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
+                        The AI-powered platform for students to build LinkedIn authority and visibility. Move beyond noise and start building a professional legacy that gets you hired.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="h-14 px-8 bg-primary text-white rounded-xl font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/20">
+                            Start Free Trial
+                        </button>
+<button class="h-14 px-8 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white rounded-xl font-bold text-lg hover:bg-slate-300 dark:hover:bg-slate-700 transition-all">
+                            View Demo
+                        </button>
+</div>
+<div class="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-background-dark bg-slate-300"></div>
+<div class="w-8 h-8 rounded-full border-2 border-background-dark bg-slate-400"></div>
+<div class="w-8 h-8 rounded-full border-2 border-background-dark bg-slate-500"></div>
+</div>
+<span>Joined by 12,000+ ambitious students</span>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-indigo-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative rounded-2xl overflow-hidden glass-card aspect-video flex items-center justify-center">
+<img alt="DiscoverJourney Dashboard Interface" class="object-cover w-full h-full opacity-90 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAckIX3dsViW2KWJgkO01tEaKQx-nOv2V7f1WBKgMwXMZmp1wnJ9ZZNgzN-ZZPxDK_n94KSuXysqLnrcSY01Zt0i1q0o-h9fhpFVYnn7z5Alni1RrmAyIBHpY8PK2B8PcFCrxB0zCqQUFo02xRZ9DtiV27OGcsvB_JJtMMobr3684ai-AQc5MHGp-ryMM-L8deimDLplVVA1RV-bPI-rarKy5bpAmwJMLZpCduuzRQHU9TFgU232W2VlvmDYtJ5wQKg4AN20UAoZpo"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
+<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center cursor-pointer border border-white/30 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-slate-100 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800 py-10 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-xl md:text-2xl font-medium text-center italic text-slate-700 dark:text-slate-300">
+                    "In the digital age, your personal brand is your resume's loudest voice." 
+                    <span class="block mt-2 text-sm font-bold uppercase tracking-widest text-primary not-italic">— Personal Branding Expert</span>
+</p>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-6 text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-6">
+                    You’re Not Invisible. <br class="md:hidden"/>
+                    You’re Just <span class="text-primary underline decoration-primary/30 underline-offset-8">Unpositioned.</span>
+</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+                    Traditional job applications are a lottery. Authority positioning is a strategy. 
+                    We help you stop shouting into the void and start attracting the right eyes.
+                </p>
+</div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group p-8 rounded-2xl glass-card hover:bg-primary/5 hover:border-primary/30 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">auto_awesome</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Authority Content Engine</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Generate high-impact posts that position you as an industry thought leader using our fine-tuned AI models.
+                    </p>
+</div>
+<div class="group p-8 rounded-2xl glass-card hover:bg-primary/5 hover:border-primary/30 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">data_saver_on</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Resume Analyzer</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Align your profile with top-tier industry standards and ensure semantic keyword optimization for ATS.
+                    </p>
+</div>
+<div class="group p-8 rounded-2xl glass-card hover:bg-primary/5 hover:border-primary/30 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">insights</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Visibility Intelligence</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Track your reach and understand exactly who—and which companies—are engaging with your brand.
+                    </p>
+</div>
+<div class="group p-8 rounded-2xl glass-card hover:bg-primary/5 hover:border-primary/30 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center text-violet-400 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">dashboard_customize</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Authority Dashboard</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        A centralized command center to manage your growth, content schedule, and professional strategy.
+                    </p>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 relative">
+<div class="max-w-5xl mx-auto glass-card rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent pointer-events-none"></div>
+<h2 class="text-4xl md:text-6xl font-black text-slate-900 dark:text-white mb-8 relative z-10">
+                    Ready to claim your <br class="hidden md:block"/> professional space?
+                </h2>
+<p class="text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto relative z-10">
+                    Join the next generation of students who don't just apply for jobs—they are sought after by employers.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center relative z-10">
+<button class="bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg hover:shadow-2xl shadow-primary/40 transition-all w-full sm:w-auto">
+                        Get Started for Free
+                    </button>
+<button class="px-10 py-4 text-slate-600 dark:text-slate-200 font-bold text-lg hover:text-primary transition-colors flex items-center gap-2">
+                        Talk to an Expert <span class="material-symbols-outlined">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark py-12">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="dj-logo text-primary">
+<svg fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M48 30V45C48 45 44 43 40 43C32 43 25 50 25 58C25 66 32 73 40 73C48 73 55 66 55 58V30H72V38H63V62C63 71 56 78 47 78C38 78 31 71 31 62" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
+<path d="M63 45V70C63 76 58 81 52 81" opacity="0.6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white uppercase tracking-wider">DiscoverJourney</h2>
+</div>
+<div class="flex gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary" href="#">Privacy</a>
+<a class="hover:text-primary" href="#">Terms</a>
+<a class="hover:text-primary" href="#">Contact</a>
+<a class="hover:text-primary" href="#">LinkedIn</a>
+</div>
+<div class="text-sm text-slate-500 dark:text-slate-600">
+                © 2024 DiscoverJourney. Built for the future of work.
+            </div>
+</div>
+</footer>
+</div>
+
+</body></html>

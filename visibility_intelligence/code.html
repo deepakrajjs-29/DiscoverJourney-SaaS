@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Visibility Intelligence - DiscoverJourney</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#342bee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111022",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #252348;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="flex h-screen overflow-hidden">
+<aside class="w-64 border-r border-slate-200 dark:border-primary/20 bg-white dark:bg-background-dark flex flex-col">
+<div class="p-6 flex items-center gap-3">
+<div class="size-8 bg-white/5 rounded-lg flex items-center justify-center overflow-hidden">
+<img alt="DJ Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkgPM7Z4K7f7ERq5HpYQnFlr31uo5YhlgIltDeE_YPHOniipNkjWiSMkcz4l9VIdNJVDt5HeQmeCi46GCnveskRcpumEVsNungH0ff6e4YUCLt5JJHifKxyCb-F9VnB4qQ1oyKqzKI6eNZJAV2kscUsVA2ftjqcG1s1s1sspc5w45gXgjWXTDTXLwrYIkj4EZjC8ZelhBJyOkGuMak4N2Gkuv1MS4JaM3tIX5u3iaNkiN4-dOzZqRobuSf2c7RT0aAPqQOw1eXHCc"/>
+</div>
+<h2 class="text-xl font-bold tracking-tight">DiscoverJourney</h2>
+</div>
+<nav class="flex-1 px-4 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">dashboard</span>
+<span class="font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20" href="#">
+<span class="material-symbols-outlined">insights</span>
+<span class="font-medium">Visibility Intelligence</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">biotech</span>
+<span class="font-medium">Content Lab</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">calendar_month</span>
+<span class="font-medium">Calendar</span>
+</a>
+</nav>
+<div class="p-4 mt-auto">
+<div class="bg-primary/5 rounded-xl p-4 border border-primary/10">
+<p class="text-xs font-bold text-primary uppercase tracking-wider mb-2">Authority Score</p>
+<div class="flex items-end gap-2">
+<span class="text-2xl font-bold">88</span>
+<span class="text-xs text-slate-500 mb-1">/100</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-slate-800 h-1.5 rounded-full mt-2">
+<div class="bg-primary h-full w-[88%] rounded-full"></div>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 flex flex-col overflow-hidden">
+<header class="h-16 border-b border-slate-200 dark:border-primary/20 bg-white/50 dark:bg-background-dark/50 backdrop-blur-md px-8 flex items-center justify-between">
+<div class="flex items-center gap-4 flex-1 max-w-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+<input class="w-full bg-slate-100 dark:bg-primary/10 border-none rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary/50" placeholder="Search insights..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+                    Build Post
+                </button>
+<div class="size-9 rounded-full bg-slate-200 dark:bg-primary/20 overflow-hidden border border-primary/20">
+<img alt="Profile" data-alt="User profile avatar showing a smiling person" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkgPM7Z4K7f7ERq5HpYQnFlr31uo5YhlgIltDeE_YPHOniipNkjWiSMkcz4l9VIdNJVDt5HeQmeCi46GCnveskRcpumEVsNungH0ff6e4YUCLt5JJHifKxyCb-F9VnB4qQ1oyKqzKI6eNZJAV2kscUsVA2ftjqcG1s1s1sspc5w45gXgjWXTDTXLwrYIkj4EZjC8ZelhBJyOkGuMak4N2Gkuv1MS4JaM3tIX5u3iaNkiN4-dOzZqRobuSf2c7RT0aAPqQOw1eXHCc"/>
+</div>
+</div>
+</header>
+<div class="flex-1 overflow-y-auto p-8 custom-scrollbar">
+<div class="max-w-7xl mx-auto space-y-8">
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl font-black tracking-tight">Visibility Intelligence</h1>
+<p class="text-slate-500 dark:text-slate-400 max-w-2xl">AI-powered insights to maximize your LinkedIn reach and student authority. Analyzing 1.2M student-led profiles daily.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 p-6 rounded-xl">
+<p class="text-sm font-medium text-slate-500 dark:text-slate-400">Avg. Reach</p>
+<div class="flex items-center justify-between mt-2">
+<span class="text-3xl font-bold">12.4k</span>
+<span class="text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded text-xs font-bold">+12%</span>
+</div>
+</div>
+<div class="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 p-6 rounded-xl">
+<p class="text-sm font-medium text-slate-500 dark:text-slate-400">Engagement Rate</p>
+<div class="flex items-center justify-between mt-2">
+<span class="text-3xl font-bold">4.8%</span>
+<span class="text-rose-500 bg-rose-500/10 px-2 py-0.5 rounded text-xs font-bold">-2%</span>
+</div>
+</div>
+<div class="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 p-6 rounded-xl">
+<p class="text-sm font-medium text-slate-500 dark:text-slate-400">Best Post Type</p>
+<div class="flex items-center justify-between mt-2">
+<span class="text-3xl font-bold">Carousels</span>
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<div class="lg:col-span-8 space-y-6">
+<div class="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 rounded-xl p-6">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold">High-Performing Student Post Types</h2>
+<button class="text-primary text-sm font-bold flex items-center gap-1">
+                                    Analyze all <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 bg-slate-50 dark:bg-white/5 rounded-lg border border-transparent hover:border-primary/30 transition-all cursor-pointer">
+<div class="size-12 rounded-lg bg-indigo-500/20 flex items-center justify-center text-indigo-400">
+<span class="material-symbols-outlined">school</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold">The "Learning Out Loud" Update</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Share a specific takeaway from a recent project or lecture.</p>
+</div>
+<div class="text-right">
+<p class="text-sm font-bold text-emerald-500">82% Match</p>
+<p class="text-xs text-slate-400">High Growth</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-slate-50 dark:bg-white/5 rounded-lg border border-transparent hover:border-primary/30 transition-all cursor-pointer">
+<div class="size-12 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold">Project Breakdown Carousel</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Step-by-step visual of how you built a technical solution.</p>
+</div>
+<div class="text-right">
+<p class="text-sm font-bold text-emerald-500">76% Match</p>
+<p class="text-xs text-slate-400">High Engagement</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-slate-50 dark:bg-white/5 rounded-lg border border-transparent hover:border-primary/30 transition-all cursor-pointer">
+<div class="size-12 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400">
+<span class="material-symbols-outlined">group</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold">The Internship Myth-Buster</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Address common misconceptions about student roles.</p>
+</div>
+<div class="text-right">
+<p class="text-sm font-bold text-emerald-500">64% Match</p>
+<p class="text-xs text-slate-400">Viral Potential</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 rounded-xl p-6">
+<h2 class="text-xl font-bold mb-6">Hook Frameworks</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-4 bg-primary/10 rounded-lg border border-primary/20">
+<span class="text-xs font-bold text-primary uppercase">The Contrarian</span>
+<p class="mt-2 text-sm italic">"Everyone told me [Popular Advice] was true. After 3 months, I realized they were wrong..."</p>
+</div>
+<div class="p-4 bg-primary/10 rounded-lg border border-primary/20">
+<span class="text-xs font-bold text-primary uppercase">The Specific Success</span>
+<p class="mt-2 text-sm italic">"How I landed an interview at [Company] using only a 30-second DM strategy..."</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 space-y-6">
+<div class="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 rounded-xl p-6">
+<h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+                                Best Posting Time
+                            </h2>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-sm">Tuesdays</span>
+<span class="text-sm font-bold bg-primary text-white px-2 py-1 rounded">8:45 AM</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm">Thursdays</span>
+<span class="text-sm font-bold bg-primary text-white px-2 py-1 rounded">12:30 PM</span>
+</div>
+<div class="mt-4 h-24 flex items-end gap-1.5">
+<div class="flex-1 bg-primary/20 h-[30%] rounded-t-sm"></div>
+<div class="flex-1 bg-primary/20 h-[45%] rounded-t-sm"></div>
+<div class="flex-1 bg-primary/60 h-[80%] rounded-t-sm"></div>
+<div class="flex-1 bg-primary/30 h-[55%] rounded-t-sm"></div>
+<div class="flex-1 bg-primary/40 h-[70%] rounded-t-sm"></div>
+<div class="flex-1 bg-primary/10 h-[20%] rounded-t-sm"></div>
+<div class="flex-1 bg-primary/10 h-[15%] rounded-t-sm"></div>
+</div>
+<p class="text-xs text-center text-slate-400">Peak engagement hours for your audience</p>
+</div>
+</div>
+<div class="bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 rounded-xl p-6 overflow-hidden">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-lg font-bold">Content Queue</h2>
+<span class="text-xs bg-primary/20 text-primary font-bold px-2 py-1 rounded">4 Pending</span>
+</div>
+<div class="space-y-3 relative">
+<div class="absolute left-[1.35rem] top-2 bottom-2 w-px bg-primary/20"></div>
+<div class="flex items-start gap-4 relative">
+<div class="size-7 rounded-full bg-primary flex items-center justify-center text-[10px] font-bold text-white z-10">24</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-bold truncate">Project Build Log #4</p>
+<p class="text-xs text-slate-500">Scheduled for 08:45 AM</p>
+</div>
+</div>
+<div class="flex items-start gap-4 relative">
+<div class="size-7 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-[10px] font-bold z-10">25</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium truncate text-slate-500">Internship Reflection</p>
+<p class="text-xs text-slate-500">Draft</p>
+</div>
+</div>
+<div class="flex items-start gap-4 relative">
+<div class="size-7 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-[10px] font-bold z-10">26</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium truncate text-slate-500">Tech Stack Review</p>
+<p class="text-xs text-slate-500">Empty Slot</p>
+</div>
+</div>
+<button class="w-full mt-4 py-2 border border-dashed border-primary/40 text-primary text-xs font-bold rounded-lg hover:bg-primary/5 transition-colors">
+                                    View Full Calendar
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
